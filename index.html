@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>UI kit(multiselect)</title>
+</head>
+<body>
+    <div class="container">
+        <div class="select">
+            <div class="form-group1">
+                <div class="multiselect">
+                    <button class="multiselect__btn">
+                        Select industry
+                    </button>
+                </div>
+                <div class="form-group">
+                    <div class="multiselect">
+                        <fieldset class="multiselect__fieldset-active">
+                            <legend class="multiselect__legend active">Industry</legend>
+                            <button class="multiselect__btn-active">
+                                2 items selected
+                            </button>
+                        </fieldset>
+                        <ul class="multiselect__list-active">
+                            <li class="multiselect__item" data-value="1">
+                                <input type="checkbox" id="checkbox1" class="custom-checkbox">
+                                <label for="checkbox1" class="label">Food / beverage</label>
+                            </li>
+                            <li class="multiselect__item" data-value="2">
+                                <input type="checkbox" id="checkbox2" class="custom-checkbox">
+                                <label for="checkbox2" class="label">Travel</label>
+                            </li>
+                            <li class="multiselect__item" data-value="3">
+                                <input type="checkbox" id="checkbox3" class="custom-checkbox" checked>
+                                <label for="checkbox3" class="label first">Automotive<span class="first-item">1 item selected</span></label>
+                                </li>
+                            <li class="multiselect__item" data-value="4">
+                                <input type="checkbox" id="checkbox4" class="custom-checkbox" checked>
+                                <label for="checkbox4" class="label">Education</label>
+                            </li>
+                            <li class="multiselect__item" data-value="5">
+                                <input type="checkbox" id="checkbox5" class="custom-checkbox">
+                                <label for="checkbox5" class="label">Goverment</label>
+                            </li>
+                            <li class="multiselect__item" data-value="6">
+                                <input type="checkbox" id="checkbox6" class="custom-checkbox">
+                                <label for="checkbox6" class="label">Nonprofit</label>
+                            </li>
+                            <li class="multiselect__item" data-value="7">
+                                <input type="checkbox" id="checkbox7" class="custom-checkbox">
+                                <label for="checkbox7" class="label">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group2">
+                <div class="multiselect">
+                    <button class="multiselect__btn">
+                        Pick desired amenities
+                    </button>
+
+                    <fieldset  class="multiselect__fieldset">
+                        <legend class="multiselect__legend">Multiline amenities picked</legend>
+                        <div class="field-btns">
+                            <div class="field-btns__selected selected">
+                                <button class="field-btns__btn-selected btn-selected">Free parking</button>
+                                <button class="field-btns__btn-selected btn-selected">Pool</button>
+                                <button class="field-btns__btn-selected btn-selected">Kitchen</button>
+                                <button class="field-btns__btn-selected btn-selected">Bathroom</button>
+                                <button class="field-btns__btn-selected btn-selected">Pet-friendly</button>
+                                <button class="field-btns__btn-selected btn-selected">Free Wi-Fi</button>
+                                <button class="field-btns__btn-selected btn-selected">Gym</button>
+                                <button class="field-btns__btn-selected btn-selected">Breakfast</button>
+                            </div>
+                            <div class="field-btns__reset">
+                                <button class="field-btns__btn-reset btn-reset">
+                                    <img src="./icons/close.svg" alt="close" class="icon-close">
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="multiselect__fieldset">
+                        <legend class="multiselect__legend">Amenities</legend>
+
+                        <div class="selected">
+                            <button class="btn-selected">Gym</button>
+                            <button class="btn-selected">Breakfast</button>
+                        </div>
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="People, places, events" class="search-input">
+                        </div>
+                        <div class="section">
+                            <div class="section1">
+                                <ul class="multiselect__list">
+                                    <li class="multiselect__item" data-value="01">
+                                        <input type="checkbox" id="01" class="custom-checkbox">
+                                        <label for="01">Bathroom</label>
+                                    </li>
+                                    <li class="multiselect__item" data-value="02">
+                                        <input type="checkbox" id="02" class="custom-checkbox">
+                                        <label for="02">Breakfast</label>
+                                    </li>
+                                    <li class="multiselect__item" data-value="03">
+                                        <input type="checkbox" id="03" class="custom-checkbox">
+                                        <label for="03">Gym</label>
+                                    </li>
+                                    <li class="multiselect__item" data-value="04">
+                                        <input type="checkbox" id="04" class="custom-checkbox">
+                                        <label for="04">Free parking</label>
+                                    </li>
+                                    <li class="multiselect__item" data-value="05">
+                                        <input type="checkbox" id="05" class="custom-checkbox">
+                                        <label for="05">Free Wi-Fi</label>
+                                    </li>
+                                    <li class="multiselect__item" data-value="06">
+                                        <input type="checkbox" id="06" class="custom-checkbox">
+                                        <label for="06">Pet-friendly</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section2">    
+                                <input type="checkbox" name="needs" id="needs" class="custom-checkbox">
+                                <label for="needs">I don't need a toilet paper</label>
+                                <input type="checkbox" name="set-time" id="set-time" class="custom-checkbox">
+                                <label for="set-time">Please, wake me up at<a class="link" href="#">Set time</a></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
